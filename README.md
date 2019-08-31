@@ -10,6 +10,9 @@ CLI login system that can:
 Passwords are salted and hashed using `bcrypt` before being stored in a SQLite database.
 
 ## Getting Started
-Necessary libraries are in `requirements.txt`, which can be install with the command `pip install -r requirements.txt`. The location of the SQLite database will be stored in `db.yaml`. Create the `db.yaml` file with the following line, replacing the text with the desired location of the SQLite database: `PATH: C:\Users\%username%\sqlite\db\cli-login.db`
+Necessary libraries are in `requirements.txt`, which can be install with the command `pip install -r requirements.txt`. The location of the SQLite database will be stored in `db.yaml`. Create the `db.yaml` file with the following lines, replacing the text with the desired location of the SQLite database: 
+
+`DEV_PATH: C:\Users\%username%\sqlite\db\cli-login.db`  
+`TEST_PATH: C:\Users\%username%\sqlite\db\cli-login-test.db`
 
 This will only create the SQLite file, not any parent directories (like `\sqlite\db`) which will need to be created manually.
